@@ -3,14 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7f5ef">
   <meta name="description" content="כרטיס הביקור הדיגיטלי של רועי לגזיאל, סטודנט למדעי המחשב וראש צוות DevOps.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:title" content="רועי לגזיאל | ראש צוות DevOps">
+  <meta property="og:description" content="DevOps, תשתיות ענן, אוטומציה ופיתוח Full-Stack.">
+  <meta property="og:url" content="https://roilagziel12345.github.io/project1/">
+  <meta property="og:image" content="https://roilagziel12345.github.io/project1/assets/fictional-devops-profile.png">
   <title>רועי לגזיאל | ראש צוות DevOps</title>
+  <link rel="canonical" href="https://roilagziel12345.github.io/project1/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <input class="theme-input" type="checkbox" id="theme-toggle" aria-label="החלפה בין מצב בהיר למצב כהה">
 
   <div class="site">
+    <a class="skip-link" href="#main-content">דלגו לתוכן המרכזי</a>
+
     <header class="site-header">
       <a class="brand" href="#home" aria-label="רועי לגזיאל - חזרה לראש העמוד">
         <span class="brand-mark" aria-hidden="true">RL</span>
@@ -19,6 +31,7 @@
 
       <nav class="main-nav" aria-label="ניווט ראשי">
         <a href="#about">אודות</a>
+        <a href="#expertise">מומחיות</a>
         <a href="#projects">פרויקטים</a>
         <a href="#contact">יצירת קשר</a>
       </nav>
@@ -39,7 +52,7 @@
       </label>
     </header>
 
-    <main>
+    <main id="main-content">
       <section class="hero" id="home" aria-labelledby="hero-title">
         <div class="hero__content">
           <p class="eyebrow"><span aria-hidden="true"></span> פתוח לאתגרים טכנולוגיים חדשים</p>
@@ -74,7 +87,7 @@
         <div class="hero__visual">
           <div class="portrait-frame">
             <div class="portrait-frame__dots" aria-hidden="true"></div>
-            <img src="assets/fictional-devops-profile.png" alt="איור של דמות מקצועית פיקטיבית המייצגת מומחה DevOps" width="1024" height="1024">
+            <img src="assets/fictional-devops-profile.png" alt="איור של דמות מקצועית פיקטיבית המייצגת מומחה DevOps" width="1024" height="1024" fetchpriority="high">
             <span class="portrait-frame__tag portrait-frame__tag--top" aria-hidden="true">&lt;DevOps&gt;</span>
             <span class="portrait-frame__tag portrait-frame__tag--bottom" aria-hidden="true">automate everything ✦</span>
           </div>
@@ -123,10 +136,81 @@
         </div>
       </section>
 
+      <section class="expertise section" id="expertise" aria-labelledby="expertise-title">
+        <div class="expertise__intro">
+          <div class="section-heading">
+            <p class="section-number">02 / מומחיות וכלים</p>
+            <h2 id="expertise-title">מהרעיון ועד<br>לסביבה יציבה.</h2>
+          </div>
+          <p>
+            שילוב של חשיבה מערכתית, אוטומציה ופיתוח מאפשר לי לראות את התמונה המלאה —
+            מתכנון הארכיטקטורה ועד ניטור המערכת לאחר העלייה לאוויר.
+          </p>
+        </div>
+
+        <div class="expertise-grid">
+          <article class="expertise-card">
+            <span class="expertise-card__icon" aria-hidden="true">01</span>
+            <h3>Cloud &amp; Containers</h3>
+            <p>תכנון והרצה של שירותים מודרניים בסביבות גמישות, עקביות וניתנות להרחבה.</p>
+            <ul>
+              <li>Kubernetes</li>
+              <li>OpenShift</li>
+              <li>Docker</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card">
+            <span class="expertise-card__icon" aria-hidden="true">02</span>
+            <h3>CI/CD &amp; GitOps</h3>
+            <p>בניית תהליכי אספקה אוטומטיים, חוזרים ושקופים שמחברים בין קוד לפרודקשן.</p>
+            <ul>
+              <li>Jenkins</li>
+              <li>GitOps</li>
+              <li>Automation</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card">
+            <span class="expertise-card__icon" aria-hidden="true">03</span>
+            <h3>Full-Stack</h3>
+            <p>פיתוח ממשקים ושירותים שמתרגמים צרכים תפעוליים לחוויית שימוש ברורה ומהירה.</p>
+            <ul>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>REST API</li>
+            </ul>
+          </article>
+
+          <article class="expertise-card">
+            <span class="expertise-card__icon" aria-hidden="true">04</span>
+            <h3>Reliability</h3>
+            <p>דגש על זמינות, אבטחה ויכולת תחזוקה כחלק מובנה מתהליך הפיתוח.</p>
+            <ul>
+              <li>Monitoring</li>
+              <li>Security</li>
+              <li>Scalability</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="workflow" aria-labelledby="workflow-title">
+          <div>
+            <p class="workflow__label">תהליך העבודה</p>
+            <h3 id="workflow-title">פשוט, שקוף ומדיד.</h3>
+          </div>
+          <ol>
+            <li><span>01</span><strong>ממפים</strong><small>צרכים, מגבלות ומדדי הצלחה</small></li>
+            <li><span>02</span><strong>מתכננים</strong><small>ארכיטקטורה ותהליך אספקה</small></li>
+            <li><span>03</span><strong>בונים ומשפרים</strong><small>איטרציות, בדיקות ומשוב</small></li>
+          </ol>
+        </div>
+      </section>
+
       <section class="projects section" id="projects" aria-labelledby="projects-title">
         <div class="projects__header">
           <div class="section-heading">
-            <p class="section-number">02 / עבודות נבחרות</p>
+            <p class="section-number">03 / עבודות נבחרות</p>
             <h2 id="projects-title">פרויקטים שאני<br>גאה בהם.</h2>
           </div>
           <p>שלושה פרויקטים שמחברים בין אוטומציה, תשתיות ענן ופיתוח מוצרים אמינים.</p>
@@ -213,7 +297,7 @@
 
       <section class="contact section" id="contact" aria-labelledby="contact-title">
         <div class="contact__intro">
-          <p class="section-number">03 / יצירת קשר</p>
+          <p class="section-number">04 / יצירת קשר</p>
           <h2 id="contact-title">יש לכם אתגר?<br><em>בואו נפתור אותו יחד.</em></h2>
           <p>אני תמיד שמח להכיר אנשים חדשים, לשמוע על אתגרים טכנולוגיים ולבחון הזדמנויות לשיתוף פעולה.</p>
         </div>
@@ -230,7 +314,14 @@
             <span class="contact-list__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92z"></path></svg>
             </span>
-            <span><small>טלפון</small><bdi>050&#8209;0000000</bdi></span>
+            <span><small>טלפון</small><bdi>050&#8209;000&#8209;0000</bdi></span>
+            <b aria-hidden="true">↗</b>
+          </a>
+          <a href="https://roilagziel12345.github.io/project1/" target="_blank" rel="noopener noreferrer">
+            <span class="contact-list__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path></svg>
+            </span>
+            <span><small>האתר החי</small>roilagziel12345.github.io/project1</span>
             <b aria-hidden="true">↗</b>
           </a>
           <a href="https://github.com/roilagziel12345" target="_blank" rel="noopener noreferrer">
